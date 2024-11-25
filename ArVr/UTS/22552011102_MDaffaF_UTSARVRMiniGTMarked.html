@@ -10,31 +10,15 @@
 </head>
 <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs ="detectionMode:mono_and_matrix;matrixCodeType:3x3_PARITY65">
-        <a-marker type ="pattern" url = "patt/pattern-kaidopurple.patt">
-            <a-box color="purple" material="opacity: 0.5" scale="0.5 0.5 0.5" width="1" height="1" depth="1"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
-            </a-box>
-            </a-marker>
-            <a-marker type ="pattern" url = "patt/pattern-kaidopink.patt">
-                <a-box color="pink" material="opacity: 0.5" scale="0.5 0.5 0.5" width="1" height="1" depth="1"
-                    animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
-                </a-box>
-                </a-marker>
-                <a-marker type ="pattern" url = "patt/pattern-kaidopolice.patt">
-                    <a-box color="yellow" material="opacity: 0.5" scale="0.5 0.5 0.5" width="1" height="1" depth="1"
-                        animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
-                    </a-box>
-                    </a-marker>
-                    <a-marker type ="pattern" url = "patt/pattern-kaidogrey.patt">
-                        <a-box color="green" material="opacity: 0.5" scale="0.5 0.5 0.5" width="1" height="1" depth="1"
-                            animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
-                        </a-box>
-                        </a-marker>
-                        <a-marker type ="pattern" url = "patt/pattern-kaidoblue.patt">
-                            <a-box color="blue" material="opacity: 0.5" scale="0.5 0.5 0.5" width="1" height="1" depth="1"
-                                animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
-                            </a-box>
-                            </a-marker>
+        <a-marker preset = "hiro">
+            <a-gltf-model src ="RX7/scene.gltf" position = "0 0 0" scale = "100 100 100"></a-gltf-model>
+        </a-marker>
+        <a-marker type ="barcode" value ="2">
+            <a-gltf-model src ="R34/scene.gltf" position = "0 0 0" scale = "100 100 100"></a-gltf-model>
+        </a-marker>
+        <a-marker type ="barcode" value ="3">
+            <a-gltf-model src ="S15/scene.gltf" position = "0 0 0" scale = "100 100 100"></a-gltf-model>
+        </a-marker>
         <a-entity camera>
             <a-cursor></a-cursor>
         </a-entity>
